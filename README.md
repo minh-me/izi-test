@@ -5,7 +5,6 @@
 Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm sinh viên, gồm các bảng quan hệ sau:
 
 ### SinhVien
-
 - **MaSV**: Mã sinh viên (Primary Key, trong MongoDB là `_id`)
 - **HoTen**: Họ tên sinh viên
 - **GioiTinh**: Giới tính (true: Nam, false: Nữ)
@@ -14,25 +13,21 @@ Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm s
 - **Tinh**: Tỉnh
 
 ### Lop
-
 - **MaLop**: Mã lớp (Primary Key, trong MongoDB là `_id`)
 - **TenLop**: Tên lớp
 - **MaKhoa**: Mã khoa (Foreign Key liên kết với bảng `Khoa`)
 
 ### Khoa
-
 - **MaKhoa**: Mã khoa (Primary Key, trong MongoDB là `_id`)
 - **TenKhoa**: Tên khoa
 - **SoCBGD**: Số cán bộ giảng dạy
 
 ### MonHoc
-
 - **MaMH**: Mã môn học (Primary Key, trong MongoDB là `_id`)
 - **TenMH**: Tên môn học
 - **SoTiet**: Số tiết
 
 ### KetQua
-
 - **MaSV**: Mã sinh viên (Foreign Key liên kết với bảng `SinhVien`)
 - **MaMH**: Mã môn học (Foreign Key liên kết với bảng `MonHoc`)
 - **DiemThi**: Điểm thi
@@ -54,6 +49,9 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 - Câu 13: Tìm sinh viên có tổng điểm cao nhất. (1đ) 
 - Câu 14: Tìm lớp có nhiều sinh viên nhất (1đ). 
 - Câu 15: Tìm cặp sinh viên có nhiều môn học chung nhất (1đ)
+
+### Gửi link github khi đã hoàn thành bài
+- https://github.com/minh-me/izi-test/edit/main/README.md
 
 
 **Ví dụ Kết Quả**:
