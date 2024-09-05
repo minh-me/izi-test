@@ -93,7 +93,7 @@ Câu 1:
 
 
 
-## SCHEMA: nodejs(express), mongoose
+### Schema: nodejs(express), mongoose
 ``` Sinh Vien
 const sinhVienSchema = new Schema(
   {
