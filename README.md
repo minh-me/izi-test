@@ -5,7 +5,6 @@
 
 ```json
 {
-    "success": true,
     "data": {
         "sinhViens": [
             {
