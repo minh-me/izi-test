@@ -1,7 +1,8 @@
 ## IZISOFTWARE EXERCIES NODEJS / MONGODB
 
 
-### Cho lược đồ CSDL quản lý điểm sinh viên, gồm các lược đồ quan hệ sau: - SinhVien(MaSV, HoTen, GioiTinh, NgaySinh, MaLop, Tinh) - Lop(MaLop, TenLop, MaKhoa) - Khoa(MaKhoa, TenKhoa, SoCBGD) - MonHoc(MaMH, TenMH, SoTiet) - KetQua(MaSV, MaMH, DiemThi) 
+## Yêu cầu
+Cho lược đồ CSDL quản lý điểm sinh viên, gồm các lược đồ quan hệ sau: - SinhVien(MaSV, HoTen, GioiTinh, NgaySinh, MaLop, Tinh) - Lop(MaLop, TenLop, MaKhoa) - Khoa(MaKhoa, TenKhoa, SoCBGD) - MonHoc(MaMH, TenMH, SoTiet) - KetQua(MaSV, MaMH, DiemThi) 
 Dựa vào lược đồ trên viết các API bằng NodeJs sau: 
 Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ) 
 Câu 2: Cho biết tổng số sinh viên của lớp ‘KT51CNTT’. (0,5đ) 
