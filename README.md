@@ -38,7 +38,7 @@ Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm s
 - **DiemThi**: Điểm thi
 
 ---
-- Dựa vào lược đồ trên viết các API bằng NodeJs sau: 
+Dựa vào lược đồ trên viết các API bằng NodeJs sau: 
 - Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ) 
 - Câu 2: Cho biết tổng số sinh viên của lớp ‘KT51CNTT’. (0,5đ) 
 - Câu 3: Đưa ra danh sách gồm mã số sinh viên, họ tên và ngày sinh của các sinh viên khoa ‘TOAN’. (0,5đ) 
