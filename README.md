@@ -38,7 +38,7 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 - Câu 2: Cho biết tổng số sinh viên của lớp ‘CNTT 01’. (0,5đ)
 - Câu 3: Đưa ra danh sách gồm mã số sinh viên, họ tên và ngày sinh của các sinh viên khoa ‘Cong Nghe Thong Tin’. (0,5đ) 
 - Câu 4: Cho biết tổng số lớp của khoa ‘Kinh Te’. (0,5đ) 
-- Câu 5: Đưa ra mã khoa, tên khoa và số giảng viên của mỗi khoa. (0,5đ) 
+- Câu 5: Đưa ra mã khoa, tên khoa và số sinh viên của mỗi khoa. (0,5đ) 
 - Câu 6: Đưa ra mã môn học, tên môn học có số tiết lớn hơn 50 tiết. (0,5đ) 
 - Câu 7: Đưa ra mã sinh viên, họ tên có điểm thi từ 7 điểm trở lên. (0,5đ) 
 - Câu 8: Cho biết sinh viên nào có điểm thi cao nhất và sinh viên có điểm thi thấp nhất. (0,5đ) 
