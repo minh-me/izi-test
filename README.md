@@ -3,9 +3,10 @@
 
 ## Yêu cầu
 Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm sinh viên, gồm các bảng quan hệ sau:
+
 ### SinhVien
 
-- **MaSV**: Mã sinh viên (Primary Key)
+- **MaSV**: Mã sinh viên (Primary Key, trong MongoDB là `_id`)
 - **HoTen**: Họ tên sinh viên
 - **GioiTinh**: Giới tính (True: Nam, False: Nữ)
 - **NgaySinh**: Ngày sinh
@@ -14,19 +15,19 @@ Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm s
 
 ### Lop
 
-- **MaLop**: Mã lớp (Primary Key)
+- **MaLop**: Mã lớp (Primary Key, trong MongoDB là `_id`)
 - **TenLop**: Tên lớp
 - **MaKhoa**: Mã khoa (Foreign Key liên kết với bảng `Khoa`)
 
 ### Khoa
 
-- **MaKhoa**: Mã khoa (Primary Key)
+- **MaKhoa**: Mã khoa (Primary Key, trong MongoDB là `_id`)
 - **TenKhoa**: Tên khoa
 - **SoCBGD**: Số cán bộ giảng dạy
 
 ### MonHoc
 
-- **MaMH**: Mã môn học (Primary Key)
+- **MaMH**: Mã môn học (Primary Key, trong MongoDB là `_id`)
 - **TenMH**: Tên môn học
 - **SoTiet**: Số tiết
 
