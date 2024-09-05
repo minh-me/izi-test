@@ -1,7 +1,117 @@
 # izi-test
 
-## Data JSON 
 
+## SCHEMA: nodejs(express), mongoose
+``` Sinh Vien
+const sinhVienSchema = new Schema(
+  {
+    hoTen: {
+      type: String,
+      trim: true,
+      required: true,
+    },
+    gioiTinh: {
+      type: Boolean,
+      trim: true,
+      default: true,
+    },
+    ngaySinh: Date,
+    maLop: {
+      type: Schema.Types.ObjectId,
+      ref: 'Lop',
+      required: true,
+    },
+    tinh: {
+      type: String,
+      trim: true,
+    },
+  },
+  {
+    timestamps: true,
+  }
+)
+```
+
+``` Lop
+const lopSchema = new Schema(
+  {
+    tenLop: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      required: true,
+    },
+    maKhoa: {
+      type: Schema.Types.ObjectId,
+      ref: 'Khoa',
+      required: true,
+    },
+  },
+  {
+    timestamps: true,
+  }
+)
+```
+
+``` Khoa
+const khoaSchema = new Schema(
+  {
+    tenKhoa: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      required: true,
+    },
+    soCBGD: Number,
+  },
+  {
+    timestamps: true,
+  }
+)
+```
+
+``` Mon Hoc
+const monHocSchema = new Schema(
+  {
+    tenMH: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      required: true,
+    },
+    soTiet: {
+      type: Number,
+      required: true,
+    },
+  },
+  {
+    timestamps: true,
+  }
+)
+```
+
+``` Ket Qua
+const ketQuaSchema = new Schema(
+  {
+    maSV: {
+      type: Schema.Types.ObjectId,
+      ref: 'SinhVien',
+      required: true,
+    },
+    maMH: {
+      type: Schema.Types.ObjectId,
+      ref: 'MonHoc',
+      required: true,
+    },
+    diemThi: Number,
+  },
+  {
+    timestamps: true,
+  }
+)
+```
+
+## Data JSON 
 
 ```json
 {
