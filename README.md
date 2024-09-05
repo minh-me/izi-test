@@ -56,6 +56,43 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 - Câu 15: Tìm cặp sinh viên có nhiều môn học chung nhất (1đ)
 
 
+**Ví dụ Kết Quả**:
+---
+Câu 1: 
+- GET: http://localhost:3000/v1/bai-taps/cau-1
+```json
+[
+    {
+        "_id": "64d9b2f9f29a0e6d9bde45b1",
+        "hoTen": "Nguyen Van A (CNTT 01)",
+        "maLop": {
+            "_id": "64d9c2e1f29a0e6d9bde45b1",
+            "tenLop": "CNTT 01"
+        }
+    },
+    {
+        "_id": "64d9b2f9f29a0e6d9bde45b2",
+        "hoTen": "Nguyen Van B (CNTT 01)",
+        "maLop": {
+            "_id": "64d9c2e1f29a0e6d9bde45b1",
+            "tenLop": "CNTT 01"
+        }
+    },
+    {
+        "_id": "64d9b2f9f29a0e6d9bde45b3",
+        "hoTen": "Le Thi A (CNTT 01)",
+        "maLop": {
+            "_id": "64d9c2e1f29a0e6d9bde45b1",
+            "tenLop": "CNTT 01"
+        }
+    }
+]
+```
+
+
+
+
+
 ## SCHEMA: nodejs(express), mongoose
 ``` Sinh Vien
 const sinhVienSchema = new Schema(
