@@ -2,7 +2,40 @@
 
 
 ## Yêu cầu
-- Cho lược đồ CSDL quản lý điểm sinh viên, gồm các lược đồ quan hệ sau: - SinhVien(MaSV, HoTen, GioiTinh, NgaySinh, MaLop, Tinh) - Lop(MaLop, TenLop, MaKhoa) - Khoa(MaKhoa, TenKhoa, SoCBGD) - MonHoc(MaMH, TenMH, SoTiet) - KetQua(MaSV, MaMH, DiemThi) 
+Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm sinh viên, gồm các bảng quan hệ sau:
+### SinhVien
+
+- **MaSV**: Mã sinh viên (Primary Key)
+- **HoTen**: Họ tên sinh viên
+- **GioiTinh**: Giới tính (True: Nam, False: Nữ)
+- **NgaySinh**: Ngày sinh
+- **MaLop**: Mã lớp (Foreign Key liên kết với bảng `Lop`)
+- **Tinh**: Tỉnh
+
+### Lop
+
+- **MaLop**: Mã lớp (Primary Key)
+- **TenLop**: Tên lớp
+- **MaKhoa**: Mã khoa (Foreign Key liên kết với bảng `Khoa`)
+
+### Khoa
+
+- **MaKhoa**: Mã khoa (Primary Key)
+- **TenKhoa**: Tên khoa
+- **SoCBGD**: Số cán bộ giảng dạy
+
+### MonHoc
+
+- **MaMH**: Mã môn học (Primary Key)
+- **TenMH**: Tên môn học
+- **SoTiet**: Số tiết
+
+### KetQua
+
+- **MaSV**: Mã sinh viên (Foreign Key liên kết với bảng `SinhVien`)
+- **MaMH**: Mã môn học (Foreign Key liên kết với bảng `MonHoc`)
+- **DiemThi**: Điểm thi
+
 ---
 - Dựa vào lược đồ trên viết các API bằng NodeJs sau: 
 - Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ) 
