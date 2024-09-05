@@ -41,7 +41,7 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 - Câu 5: Đưa ra mã khoa, tên khoa và số cán bộ giảng dạy của mỗi khoa. (0,5đ) 
 - Câu 6: Đưa ra mã môn học, tên môn học có số tiết lớn hơn 50 tiết. (0,5đ) 
 - Câu 7: Đưa ra mã sinh viên, họ tên có điểm thi môn ‘triet hoc’ từ 7 điểm trở lên. (0,5đ) [{_id: "", hoTen: "", ...}]  (không phân biệt chữ thường/in hoa)
-- Câu 8: Cho biết sinh viên nào có điểm thi cao nhất và sinh viên có điểm thi thấp nhất. (0,5đ) 
+- Câu 8: Cho biết sinh viên nào có điểm thi cao nhất và sinh viên có điểm thi thấp nhất môn triet hoc’. (0,5đ) [{_id: "", hoTen: "", ...}]  (không phân biệt chữ thường/in hoa)
 - Câu 9: Cho biết danh sách từng lớp có tổng bao nhiêu sinh viên. (0,5đ) 
 - Câu 10: Đưa ra danh sách sinh viên thuộc ‘Da Nang’. (0,5đ)   // không phân biệt chữ thường/in hoa
 - Câu 11: Viết api tính điểm trung bình từ kết quả thi của sinh viên dựa vào mã sinh viên. (1đ) 
