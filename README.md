@@ -8,7 +8,7 @@ Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm s
 
 - **MaSV**: Mã sinh viên (Primary Key, trong MongoDB là `_id`)
 - **HoTen**: Họ tên sinh viên
-- **GioiTinh**: Giới tính (True: Nam, False: Nữ)
+- **GioiTinh**: Giới tính (true: Nam, false: Nữ)
 - **NgaySinh**: Ngày sinh
 - **MaLop**: Mã lớp (Foreign Key liên kết với bảng `Lop`)
 - **Tinh**: Tỉnh
