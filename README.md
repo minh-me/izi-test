@@ -1,4 +1,24 @@
-# izi-test
+### IZISOFTWARE EXERCIES NODEJS / MONGODB
+
+
+# Cho lược đồ CSDL quản lý điểm sinh viên, gồm các lược đồ quan hệ sau: - SinhVien(MaSV, HoTen, GioiTinh, NgaySinh, MaLop, Tinh) - Lop(MaLop, TenLop, MaKhoa) - Khoa(MaKhoa, TenKhoa, SoCBGD) - MonHoc(MaMH, TenMH, SoTiet) - KetQua(MaSV, MaMH, DiemThi) 
+Dựa vào lược đồ trên viết các API bằng NodeJs sau: 
+Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ) 
+Câu 2: Cho biết tổng số sinh viên của lớp ‘KT51CNTT’. (0,5đ) 
+Câu 3: Đưa ra danh sách gồm mã số sinh viên, họ tên và ngày sinh của các sinh viên khoa ‘TOAN’. (0,5đ) 
+Câu 4: Cho biết tổng số lớp của khoa ‘CONG NGHE SINH HOC’. (0,5đ) 
+Câu 5: Đưa ra mã khoa, tên khoa và số giảng viên của mỗi khoa. (0,5đ) 
+Câu 6: Đưa ra mã môn học, tên môn học có số tiết lớn hơn 50 tiết. (0,5đ) 
+Câu 7: Đưa ra mã sinh viên, họ tên có điểm thi từ 7 điểm trở lên. (0,5đ) 
+Câu 8: Cho biết sinh viên nào có điểm thi cao nhất và sinh viên có điểm thi thấp nhất. (0,5đ) 
+Câu 9: Cho biết danh sách từng lớp có tổng bao nhiêu sinh viên. (0,5đ) 
+Câu 10: Đưa ra danh sách sinh viên thuộc ‘ Da Nang’. (0,5đ) 
+Câu 11: Viết api tính điểm trung bình từ kết quả thi của sinh viên dựa vào mã sinh viên. (1đ) 
+Câu 12: Xếp hạng sinh viên dựa theo điểm trung bình Giỏi >= 8.5, Khá >= 7 và  <8.5, Trung bình >=5 và 
+<7,  Yếu <5 (1đ). 
+Câu 13: Tìm sinh viên có tổng điểm cao nhất. (1đ) 
+Câu 14: Tìm lớp có nhiều sinh viên nhất (1đ). 
+Câu 15: Tìm cặp sinh viên có nhiều môn học chung nhất (1đ)
 
 
 ## SCHEMA: nodejs(express), mongoose
