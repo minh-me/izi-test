@@ -1,6 +1,11 @@
 ## IZISOFTWARE EXERCIES NODEJS / MONGODB
 
 
+### Sau khi hoàn thành đẩy code lên github và nộp bài vào sheet:
+- https://docs.google.com/spreadsheets/d/1vCYwP6SEAjkblESZrII8Ac8cXLnKBSwq0nNN9hNcrBU/edit?gid=0#gid=0
+- Gồm: Email/Phone,  Github
+
+
 ## Yêu cầu
 Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm sinh viên, gồm các bảng quan hệ sau:
 
@@ -51,10 +56,6 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 - Câu 15: Tìm cặp sinh viên có nhiều môn học chung nhất (1đ)
 
 - PV: Trình bày xử lý 1 bài toán đơn giản
-
-### Sau khi hoàn thành đẩy code lên github và nộp bài vào sheet:
-- https://docs.google.com/spreadsheets/d/1vCYwP6SEAjkblESZrII8Ac8cXLnKBSwq0nNN9hNcrBU/edit?gid=0#gid=0
-- Gồm: Email/Phone,  Github
 
 
 *** Handle ****:
