@@ -57,10 +57,12 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 
 
 *** Handle ****:
-// Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ)
+- Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ)
+```
 const getCau1V2 = async () => {
   return SinhVien.find().select('_id hoTen maLop').populate('maLop', 'tenLop')
 }
+```
 
 
 **Ví dụ Kết Quả**:
