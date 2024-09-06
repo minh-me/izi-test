@@ -1,5 +1,6 @@
 ## IZISOFTWARE EXERCIES NODEJS / MONGODB
-
+Dương Văn Tiến
+[https://github.com/Tien2003deptrai/test-backend-izi/blob/main/dco.txt](https://github.com/Tien2003deptrai/test-backend-izi/tree/main)
 
 ## Yêu cầu
 Dưới đây là lược đồ cơ sở dữ liệu (CSDL) quản lý điểm sinh viên, gồm các bảng quan hệ sau:
