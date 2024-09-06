@@ -50,6 +50,8 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 - Câu 14: Tìm lớp có nhiều sinh viên nhất (1đ). 
 - Câu 15: Tìm cặp sinh viên có nhiều môn học chung nhất (1đ)
 
+- PV: 1 câu hỏi riêng
+
 ### Sau khi hoàn thành đẩy code lên github và note vào
 - https://docs.google.com/spreadsheets/d/1vCYwP6SEAjkblESZrII8Ac8cXLnKBSwq0nNN9hNcrBU/edit?gid=0#gid=0
 
