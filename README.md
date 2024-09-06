@@ -56,6 +56,13 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 - https://docs.google.com/spreadsheets/d/1vCYwP6SEAjkblESZrII8Ac8cXLnKBSwq0nNN9hNcrBU/edit?gid=0#gid=0
 
 
+*** Handle ****:
+// Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ)
+const getCau1V2 = async () => {
+  return SinhVien.find().select('_id hoTen maLop').populate('maLop', 'tenLop')
+}
+
+
 **Ví dụ Kết Quả**:
 ---
 Câu 1: 
