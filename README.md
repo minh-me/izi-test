@@ -59,6 +59,16 @@ Dựa vào lược đồ trên viết các API bằng NodeJs sau:
 *** Handle ****:
 - Câu 1: Đưa ra thông tin gồm mã sinh viên, họ tên, mã lớp của tất cả sinh viên. (0,5đ)
 ```
+
+import Khoa from '../models/khoa.model'
+import Lop from '../models/lop.model'
+import MonHoc from '../models/mon-hoc.model'
+import SinhVien from '../models/sinh-vien.model'
+import KetQua from '../models/ket-qua.model'
+import { ObjectId } from 'mongodb'
+
+
+
 const getCau1V2 = async () => {
   return SinhVien.find().select('_id hoTen maLop').populate('maLop', 'tenLop')
 }
