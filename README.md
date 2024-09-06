@@ -109,6 +109,112 @@ Câu 1:
 ```
 
 
+#### Seed Data
+```
+
+const seedData = async () => {
+  const data = {
+    sinhViens: [
+      {
+        hoTen: 'Le Thi B (KT 02)',
+        gioiTinh: true,
+        ngaySinh: '1998-01-17T01:22:16.185Z',
+        maLop: '64d9c2e1f29a0e6d9bde45b4',
+        tinh: 'Da Nang',
+        _id: '64d9b2f9f29a0e6d9bde45bc',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.239Z',
+        updatedAt: '2024-09-05T15:09:36.239Z',
+      },
+    ],
+    lops: [
+      {
+        tenLop: 'khtn 01',
+        maKhoa: '64d9c4e1f29a0e6d9bde45b5',
+        _id: '64d9c2e1f29a0e6d9bde45c3',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.246Z',
+        updatedAt: '2024-09-05T15:09:36.246Z',
+      },
+    ],
+    khoas: [
+      {
+        tenKhoa: 'cong nghe thong tin',
+        soCBGD: 123456789,
+        _id: '64d9c4e1f29a0e6d9bde45b1',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.249Z',
+        updatedAt: '2024-09-05T15:09:36.249Z',
+      },
+      {
+        tenKhoa: 'su pham',
+        soCBGD: 123456780,
+        _id: '64d9c4e1f29a0e6d9bde45ba',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.249Z',
+        updatedAt: '2024-09-05T15:09:36.249Z',
+      },
+    ],
+    monHocs: [
+      {
+        tenMH: 'nhap mon',
+        soTiet: 65,
+        _id: '64d9c6e1f29a0e6d9bde45ba',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.250Z',
+        updatedAt: '2024-09-05T15:09:36.250Z',
+      },
+    ],
+    ketQuas: [
+      {
+        maSV: '64d9b2f9f29a0e6d9bde45bc',
+        maMH: '64d9c6e1f29a0e6d9bde45b8',
+        diemThi: 5.5,
+        _id: '66d9c9b079d45575ba8104a3',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.261Z',
+        updatedAt: '2024-09-05T15:09:36.261Z',
+      },
+      {
+        maSV: '64d9b2f9f29a0e6d9bde45bc',
+        maMH: '64d9c6e1f29a0e6d9bde45b9',
+        diemThi: 3.8,
+        _id: '66d9c9b079d45575ba8104a4',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.261Z',
+        updatedAt: '2024-09-05T15:09:36.261Z',
+      },
+      {
+        maSV: '64d9b2f9f29a0e6d9bde45bc',
+        maMH: '64d9c6e1f29a0e6d9bde45ba',
+        diemThi: 3.3,
+        _id: '66d9c9b079d45575ba8104a5',
+        __v: 0,
+        createdAt: '2024-09-05T15:09:36.261Z',
+        updatedAt: '2024-09-05T15:09:36.261Z',
+      },
+    ],
+  }
+
+  await KetQua.deleteMany()
+  await SinhVien.deleteMany()
+  await Lop.deleteMany()
+  await MonHoc.deleteMany()
+  await Khoa.deleteMany()
+
+  const [sinhviens, lops, monhocs, khoas, ketquas] = await Promise.all([
+    SinhVien.insertMany(data.sinhViens),
+    Lop.insertMany(data.lops),
+    MonHoc.insertMany(data.monHocs),
+    Khoa.insertMany(data.khoas),
+    KetQua.insertMany(data.ketQuas),
+  ])
+
+  return { sinhviens, lops, monhocs, khoas, ketquas }
+}
+```
+
+
 
 
 
